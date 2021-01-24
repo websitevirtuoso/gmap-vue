@@ -1,2 +1,0 @@
-"*.{vue,js,vue,html,js}":
-  - "npm run lint"
