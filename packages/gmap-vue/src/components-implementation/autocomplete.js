@@ -41,7 +41,7 @@ const props = {
   options: {
     type: Object,
   },
-  fields: {
+  fieldsProp: {
     required: false,
     type: Array,
     default: null,
@@ -92,8 +92,8 @@ export default {
 
       // IMPORTANT: To avoid paying for data that you don't need,
       // be sure to use Autocomplete.setFields() to specify only the place data that you will use.
-      if (this.fields) {
-        this.$autocomplete.setFields(this.fields);
+      if (this.fieldsProp) {
+        this.$autocomplete.setFields(this.fieldsProp);
       }
 
       // Not using `bindEvents` because we also want
